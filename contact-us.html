@@ -15,7 +15,21 @@
   </head>
 
   <body>
-
+<!-- loading -->
+ <div id="loadingScreen" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+">
+  <div>Loading...</div>
+</div>
    
     <header>
       <div class="header-wrap">
@@ -260,7 +274,47 @@
         });
       });
     </script>
-    
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.images;
+    const totalImages = images.length;
+    let loadedImages = 0;
+
+    if (totalImages === 0) {
+      doneLoading();
+    }
+
+    for (let i = 0; i < totalImages; i++) {
+      if (images[i].complete) {
+        imageLoaded();
+      } else {
+        images[i].addEventListener('load', imageLoaded);
+        images[i].addEventListener('error', imageLoaded);
+      }
+    }
+
+    function imageLoaded() {
+      loadedImages++;
+      if (loadedImages === totalImages) {
+        doneLoading();
+      }
+    }
+
+    function doneLoading() {
+      const loader = document.getElementById("loadingScreen");
+      const content = document.getElementById("mainContent");
+
+      loader.style.opacity = "0";
+      loader.style.transition = "opacity 0.5s ease";
+
+      setTimeout(() => {
+        loader.style.display = "none";
+        content.style.visibility = "visible";
+      }, 500);
+    }
+  });
+</script>
+
   </body>
   
 </html>
