@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="./src/css/about-us.css" />
+  <link rel="stylesheet" href="./src/css/all.css" />
+  <link rel="stylesheet" href="./src/css/fontawesome.css" />
+  <script src="./src/js/all.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-wrap">
+      <div class="mobile-nav">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="./assets/Logo.png" alt="Tani Kopi" />
+        </a>
+      </div>
+      <nav>
+        <div class="nav-wrap">
+          <a href="./menu.html">Menu</a>
+          <a href="./about-us.html">Tentang Kami</a>
+          <a href="./contact-us.html">Kontak Kami</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="motto">
+    <div class="wrap">
+      <div class="owner-image">
+        <div class="image-frame">
+          <img src="./assets/home-gallery/Owner.jpg" alt="Owner" />
+        </div>
+      </div>
+      <div class="owner-text">
+        <p>Owner</p>
+        <h3>Naylatul Fitria</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="offers">
+    <div class="wrap">
+      <h3>Tempat terbaik untuk belanja kebutuhan harian dengan suasana yang hangat, pelayanan ramah, dan harga yang selalu bersahabat.</h3>
+    </div>
+  </section>
+
+  <section id="testimonial">
+    <div class="wrap">
+      <h2 class="sec-title">Yang Mereka Katakan Tentang Kami</h2>
+      <div class="slider">
+        <button class="prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-wrapper">
+          <div class="slide">
+            <div class="card"><p>"Tempat belanja yang gak ribet. Cepat dilayani dan gak bikin kantong jebol!"</p><h5>Tutik</h5></div>
+            <div class="card"><p>"Setiap belanja ke sini, selalu puas. Dari beras sampai sabun, semua ada!"</p><h5>Bagas Vitro</h5></div>
+          </div>
+          <div class="slide">
+            <div class="card"><p>"Toko kecil, tapi pelayanannya besar. Gak heran kalau banyak yang jadi langganan."</p><h5>Alfin</h5></div>
+            <div class="card"><p>"Stepping into this café is like finding an oasis of calm..."</p><h5>MD. Adhyaksa</h5></div>
+          </div>
+          <div class="slide">
+            <div class="card"><p>"Produk lengkap, harga masuk akal, dan ownernya selalu senyum."</p><h5>Suryo</h5></div>
+            <div class="card"><p>"Pertama kali ke sini langsung jatuh hati."</p><h5>Agus</h5></div>
+          </div>
+        </div>
+        <button class="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="map">
+    <div class="wrap">
+      <h2 class="sec-title">Temukan Toko Kami Disini</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1749917048686!6m8!1m7!1sFLUu4aSBwx9NfTozn8LEIg!2m2!1d-8.24702415502748!2d113.7134150474954!3f356.88528027277573!4f-14.764229545277232!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+    <!-- <footer>
+      <div class="footer-wrap">
+        <div class="left">
+          <h3>Hubungi</h3>
+          <div class="location">
+            <p>
+              <i class="fas fa-map-marker-alt"></i
+              ><span>Peji, Lengkong, Kec. Mumbulsari, Kabupaten Jember, Jawa Timur</span>
+            </p>
+            <p><i class="fab fa-instagram"></i><span>@Tokko-Ku</span></p>
+            <p>
+              <i class="fas fa-phone-square-alt"></i
+              ><span>+62 856 5414 1926</span>
+            </p>
+          </div>
+        </div>
+        <div class="middle">
+          <h2>Tokko Ku</h2>
+          <p class="desc">Kualitas terhebat dengan harga bersahabat</p>
+          <div class="social">
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="right">
+         <h3>Jam Kerja</h3>
+          <div class="work-hours">
+            <p><span>Senin - Jum'at</span><span>08:00 Pagi - 10:00 Malam</span></p>
+            <p><span>Sabtu - Minggu</span><span>09:00 Pagi - 08:00 Malam</span></p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+  <script src="./src/js/about-us.js"></script>
+  <script>
+    function toggleText() {
+      const moreText = document.getElementById("moreText");
+      const linkText = document.getElementById("readMoreLink");
+      if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        linkText.textContent = " Sembunyikan";
+      } else {
+        moreText.style.display = "none";
+        linkText.textContent = " Selengkapnya...";
+      }
+    }
+  </script>
+
+  <!-- Mobile Sidebar Styles -->
+  <style>
+    #mobileSidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #2D9CDB;
+      padding: 1.5rem;
+      display: none;
+      flex-direction: column;
+      z-index: 1000;
+      color: white;
+      font-size: 1.2rem;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    #mobileSidebar.show { display: flex; }
+    #mobileSidebar.active { transform: translateX(0); }
+    .close-btn {
+      font-size: 1.5rem;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: -45px;
+      background-color: white;
+      color: #007BFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+    }
+    #mobileSidebar a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      display: block;
+    }
+  </style>
+
+  <!-- Mobile Sidebar Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.querySelector('.mobile-nav');
+
+      const sidebar = document.createElement('div');
+      sidebar.id = 'mobileSidebar';
+
+      const headerContainer = document.createElement('div');
+      headerContainer.style.position = 'relative';
+
+      const logoImg = document.createElement('img');
+      logoImg.src = './assets/Logo.png';
+      logoImg.alt = 'Logo';
+      Object.assign(logoImg.style, {
+        display: 'block',
+        margin: '0 auto 1.5rem auto',
+        width: '120px'
+      });
+
+      const closeBtn = document.createElement('span');
+      closeBtn.className = 'close-btn';
+      closeBtn.innerHTML = '&times;';
+      closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        setTimeout(() => sidebar.classList.remove('show'), 300);
+      });
+
+      headerContainer.appendChild(logoImg);
+      headerContainer.appendChild(closeBtn);
+      sidebar.appendChild(headerContainer);
+
+      const links = [
+        { text: 'Menu', href: './menu.html' },
+        { text: 'Tentang Kami', href: './about-us.html' },
+        { text: 'Kontak Kami', href: './contact-us.html' }
+      ];
+
+      links.forEach(linkData => {
+        const a = document.createElement('a');
+        a.href = linkData.href;
+        a.textContent = linkData.text;
+        sidebar.appendChild(a);
+      });
+
+      document.body.appendChild(sidebar);
+
+      toggleBtn.addEventListener('click', () => {
+        sidebar.classList.add('show');
+        setTimeout(() => sidebar.classList.add('active'), 10);
+      });
+    });
+  </script>
+</body>
+</html>

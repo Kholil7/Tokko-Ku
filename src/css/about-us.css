@@ -1,0 +1,435 @@
+section:not(#navbar, #hero) {
+  margin-bottom: 60px;
+  padding: 0 30px;
+}
+
+section .wrap {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+section h2.sec-title {
+  text-align: center;
+  padding: 0 30px 30px;
+  font-size: 2.3rem;
+}
+
+/* Section: Hero */
+
+#hero {
+  padding: min(30%, 120px) 10px min(30%, 60px);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+
+#hero .wrap {
+  height: auto;
+  max-width: var(--max-width);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+#hero .text {
+  text-shadow: 0 0 6px black;
+  text-align: center;
+  color: var(--secondary);
+}
+
+#hero .text h2 {
+  font-size: var(--text-5xl);
+}
+
+#hero .text p.desc {
+  font-size: var(--text-2xl);
+  margin: 0;
+}
+
+/* Section Offers */
+
+#offers {
+  width: 100%;
+  height: 25rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(71, 135, 218, 0),
+      rgba(18, 36, 151, 0.8)
+    ),
+    url("../../assets/Offers-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#offers .wrap {
+  max-width: var(--max-width);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 1.5rem;
+  color: #ffffff;
+}
+
+#offers h3 {
+  width: 45%;
+  text-align: end;
+  font-size: var(--text-4xl);
+}
+
+#offers p {
+  width: 45%;
+  text-align: end;
+  font-size: var(--text-xl);
+}
+/* Section Motto */
+#motto {
+  padding: 1rem 1rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+#motto .wrap {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.owner-image .image-frame {
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 5px solid #000fb8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.owner-image .image-frame img {
+  width: px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.owner-text{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.owner-text h3 {
+  font-size: 1.5rem;
+  color: #2d3436;
+}
+
+.owner-text p {
+  /* margin-top: 0.5rem; */
+  font-size: 20px;
+  color: #000000;
+  font-family: serif;
+}
+
+
+.owner-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.motto-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.motto-text h3 {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.motto-text p {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+}
+
+
+/* Section Testimonial */
+
+#testimonial {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#testimonial .wrap {
+  width: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#testimonial h2 {
+  width: 100%;
+  text-align: center;
+}
+
+#testimonial .slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#testimonial .slider .slider-wrapper {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+#testimonial .slider .slider-wrapper .slide {
+  display: flex;
+  min-width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 2rem;
+  gap: 2rem;
+}
+
+#testimonial .slider .slider-wrapper .slide .card {
+  background-image: linear-gradient(
+      to right,
+      rgba(243, 248, 255, 0),
+      rgba(18, 36, 151, 0.8)
+    ),
+    url("../../assets/Offers-bg.jpg");
+  border-radius: 8px;
+  padding: 2rem;
+  width: 38%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#testimonial .slider .slider-wrapper .slide .card p {
+  font-size: var(--text-xl);
+  line-height: normal;
+}
+
+#testimonial .slider .slider-wrapper .slide .card h5 {
+  font-size: var(--text-xl);
+  line-height: normal;
+  margin-top: 10px;
+  margin-top: 10px;
+}
+
+#testimonial .slider .slider-wrapper .slide .card::after {
+  content: '"';
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 0;
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  bottom: 0;
+  right: 20px;
+  color: var(--primary);
+  opacity: 0.5;
+  font-family: "Vesper Libre";
+  font-family: "Vesper Libre";
+}
+
+#testimonial .slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+  font-size: var(--text-3xl);
+  font-size: var(--text-3xl);
+}
+
+#testimonial .slider button.prev {
+  left: 0px;
+}
+
+#testimonial .slider button.next {
+  right: 0px;
+}
+
+/* Section Maps */
+
+#map iframe {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+
+/* Tab Screen */
+
+@media screen and (max-width: 1281px) {
+  #hero {
+    margin-bottom: 110px;
+  }
+
+  #offers .wrap h3 {
+    width: 80%;
+    font-size: var(--text-2xl);
+  }
+
+  #offers .wrap p {
+    width: 80%;
+    font-size: var(--text-base);
+  }
+
+  #motto .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #motto .wrap > div:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+  }
+
+  #motto .wrap > div:first-child h3 {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: var(--text-2xl);
+  }
+
+  #motto .wrap > div:first-child p {
+    font-size: var(--text-xl);
+  }
+
+  #motto .wrap > div:first-child::before {
+    /* content: '"'; */
+    font-size: 10em;
+    font-weight: bold;
+    position: absolute;
+    font-family: "Vesper Libre", serif;
+    top: -110px;
+    left: 5px;
+    color: var(--primary);
+  }
+
+  #motto .wrap > div:first-child::after {
+    /* content: '"'; */
+    font-size: 10em;
+    font-weight: bold;
+    line-height: 1;
+    position: absolute;
+    font-family: "Vesper Libre", serif;
+    bottom: -170px;
+    right: 5px;
+    color: var(--primary);
+  }
+
+  #motto .wrap > div:last-child {
+    width: 100%;
+    height: 10rem;
+  }
+
+  #motto .wrap > div:last-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+  }
+
+  #testimonial .wrap .slider .slider-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  #testimonial .wrap .slider .slider-wrapper .slide {
+    height: 100%;
+    flex-direction: column;
+    padding: 0 3rem;
+    padding: 0 3rem;
+  }
+
+  #testimonial .wrap .slider .slider-wrapper .slide .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  #testimonial .wrap .slider .slider-wrapper .slide .card p {
+    font-size: var(--text-base);
+  }
+}
+
+
+/* Responsive untuk ukuran layar maksimum 768px */
+@media screen and (max-width: 768px) {
+  .footer-wrap {
+    flex-direction: column;
+    align-items: flex-start; /* atau center sesuai kebutuhan */
+  }
+
+  .footer-wrap .left,
+  .footer-wrap .middle,
+  .footer-wrap .right {
+    width: 100%;
+  }
+
+  .footer-wrap .middle {
+    text-align: left; /* ubah ke center jika ingin tengah */
+  }
+
+  .social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+

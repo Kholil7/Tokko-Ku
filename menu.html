@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Menu</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link media="all" rel="stylesheet" href="./src/css/all.css" />
+    <link media="all" rel="stylesheet" href="./src/css/fontawesome.css" />
+
+    <link media="all" rel="stylesheet" href="./src/css/menu.css" />
+    <link media="all" rel="stylesheet" href="./src/css/product.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-wrap">
+        <div class="mobile-nav">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./assets/Logo.png" alt="Tani Kopi" />
+            </a>
+          </div>
+          
+        </div>
+        <nav>
+          <div class="nav-wrap">
+            <a href="./menu.html">Menu</a>
+            <a href="./about-us.html">Tentang Kami</a>
+            <a href="./contact-us.html">Kontak Kami</a>
+          </div>
+        </nav>
+        <div class="cart-button">
+          <svg
+            width="73"
+            height="74"
+            viewBox="0 0 73 74"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.1665 12.6667H20.0249C20.6332 12.6667 20.9374 12.6667 21.1574 12.8385C21.3774 13.0103 21.4512 13.3053 21.5987 13.8955L23.7188 22.3758C24.0138 23.5561 24.1614 24.1462 24.6014 24.4898C25.0415 24.8334 25.6498 24.8334 26.8664 24.8334H30.4165"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+            />
+            <path
+              d="M54.75 52.2083H20.5007C19.4737 52.2083 18.9601 52.2083 18.7173 51.8715C18.4746 51.5346 18.637 51.0474 18.9617 50.0731L20.5522 45.3018C20.9091 44.2311 21.0875 43.6957 21.5124 43.3895C21.9372 43.0833 22.5015 43.0833 23.6301 43.0833H42.5833"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M50.7056 43.0833H25.7074C24.9144 43.0833 24.2376 42.51 24.1072 41.7278L21.5276 26.25C21.404 25.5084 21.9759 24.8333 22.7277 24.8333H59.5208C60.1237 24.8333 60.5159 25.4679 60.2462 26.0072L52.1565 42.1866C51.8818 42.7362 51.32 43.0833 50.7056 43.0833Z"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+            />
+            <circle cx="51.7082" cy="61.3334" r="3.04167" fill="#222" />
+            <circle cx="27.3752" cy="61.3334" r="3.04167" fill="#222" />
+          </svg>
+          <span id="cart-count" class="cart-count"></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <h2 class="title">Tersedia</h2>
+
+        <div class="menu-wrap">
+          <div class="tab"></div>
+
+          <div class="overlay" onclick="closePopup()"></div>
+          <div class="popup"></div>
+          <div class="menu-list">
+
+
+
+
+            <div class="product">
+              <div class="product-wrap" data-name="Chiki Balls" data-price="7500" data-image="./assets/product-img/Snack/chiki.png">
+                <div class="img">
+                  <img src="./assets/product-img/Snack/chiki.png" />
+                </div>
+                <h3>Chiki Balls</h3>
+                <p class="category">Snack</p>
+                <div class="product-choice"></div>
+                <div class="price">Rp 7.500</div>
+              </div>
+            </div>
+
+             
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Sabun/Pantene Rambut Rontok saset.png" />
+                </div>
+                <h3>Pantene Rambut Rontok saset</h3>
+                <p class="category">Sabun</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 1.000</div>
+              </div>
+            </div>
+             
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Sabun/Pantene Rambut Rusak saset.png" />
+                </div>
+                <h3>Pantene Rambut Rusak saset</h3>
+                <p class="category">Sabun</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 1.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Snack/Aoka Pandan .png" />
+                </div>
+                <h3>Aoka Pandan </h3>
+                <p class="category">Snack</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 2.500 </div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Snack/Biskuat.png" />
+                </div>
+                <h3>Biskuat</h3>
+                <p class="category">Snack</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 500 </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Snack/Bolu Keju Craft.png" />
+                </div>
+                <h3>Bolu Keju Craft</h3>
+                <p class="category">Snack</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 2.000 </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Snack/Chitato Sapi Panggang.png" />
+                </div>
+                <h3>Chitato Sapi Panggang</h3>
+                <p class="category">Snack</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 3.000 </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Snack/Chocolatos 1 Bungkus .png" />
+                </div>
+                <h3>Chocolatos 1 Bungkus </h3>
+                <p class="category">Snack</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 3.000 </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Snack/Chocolatos Coklat.png" />
+                </div>
+                <h3>Chocolatos Coklat</h3>
+                <p class="category">Snack</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 1.000 </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Snack/Chocolatos Dark Choco.png" />
+                </div>
+                <h3>Chocolatos Dark Choco</h3>
+                <p class="category">Snack</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 1.000 </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Sembako/bawang bubuk.png  " />
+                </div>
+                <h3>Bawang Merah Botol Bubuk 50gr</h3>
+                <p class="category">Sembako</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Sembako/bawang bubuk 10 g.png" />
+                </div>
+                <h3>Bawang Merah Bubuk 10g</h3>
+                <p class="category">Sembako</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 2.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Sembako/kunyit bubuk 10g.png" />
+                </div>
+                <h3>Desaku kunyit bubuk</h3>
+                <p class="category">Sembako</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 1.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div
+                class="product-wrap"
+                data-price='{"200g":5000,"500g":11000,"1Kg":20500}'
+                data-unit="g"
+              >
+                <div class="img">
+                  <img src="./assets/product-img/Sembako/gula rose brand.png" />
+                </div>
+                <h3>Gula Rose Brand </h3>
+                <p class="category">Sembako</p>
+                <div class="product-choice">
+                  <div class="size"></div> <!-- ini nanti akan diisi otomatis -->
+                </div>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+       
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Alat tulis/Buku Gambar Sidu A4.png  " />
+                </div>
+                <h3>Buku Gambar Sidu A4</h3>
+                <p class="category">Alat tulis</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 3.000</div>
+              </div>
+            </div>
+          
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Alat tulis/Buku Gambar Sidu A5.png  " />
+                </div>
+                <h3>Buku Gambar Sidu A5</h3>
+                <p class="category">Alat tulis</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 6.000</div>
+              </div>
+            </div>   
+          
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Alat tulis/Buku Latin 1 Pack .png  " />
+                </div>
+                <h3>Buku Latin 1 Pack </h3>
+                <p class="category">Alat tulis</p>
+                <div class="product-choice">
+                </div>
+                <div class="price">Rp 32.000</div>
+              </div>
+            </div>     
+              
+          <div class="product">
+            <div class="product-wrap">
+              <div class="img">
+                <img src="./assets/product-img/Alat tulis/Buku Tulis A4 1 Pack.png  " />
+              </div>
+              <h3>Buku Tulis A4 1 Pack</h3>
+              <p class="category">Alat tulis</p>
+              <div class="product-choice">
+              </div>
+              <div class="price">Rp 33.000 </div>
+            </div>
+          </div>   
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Alat tulis/Buku Tulis Latin.png  " />
+            </div>
+            <h3>Buku Tulis Latin</h3>
+            <p class="category">Alat tulis</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 3.000 </div>
+          </div>
+          </div>   
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Alat tulis/Buku Tulis Matematika .png  " />
+            </div>
+            <h3>Buku Tulis Matematika </h3>
+            <p class="category">Alat tulis</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 3.000 </div>
+          </div>
+          </div>   
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Alat tulis/Buku Tulis Matematika 1 Pack.png  " />
+            </div>
+            <h3>Buku Tulis Matematika 1 Pack </h3>
+            <p class="category">Alat tulis</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 45.000 </div>
+          </div>
+          </div>   
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Alat tulis/Lakban bening.png  " />
+            </div>
+            <h3>Lakban bening </h3>
+            <p class="category">Alat tulis</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 9.000 </div>
+          </div>
+          </div>   
+          
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Alat tulis/Lakban cream.png  " />
+            </div>
+            <h3>Lakban cream </h3>
+            <p class="category">Alat tulis</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 8.000 </div>
+          </div>
+          </div>   
+
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Kecantikan/casablanca pink.png  " />
+            </div>
+            <h3>Casablanca pink Body Mist</h3>
+            <p class="category">Kecantikan</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 16 .500 </div>
+          </div>
+          </div>  
+          
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Kecantikan/citra Sunflower & Mangoesteen.png  " />
+            </div>
+            <h3>Citra Sunflower & Mangoesteen</h3>
+            <p class="category">Kecantikan</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 20 .000 </div>
+          </div>
+          </div>  
+          
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Kecantikan/Citra Tone Up.png  " />
+            </div>
+            <h3>Citra Tone Up</h3>
+            <p class="category">Kecantikan</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 23.500 </div>
+          </div>
+          </div> 
+
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Rokok/20 Forte.png " />
+            </div>
+            <h3>20 Forte</h3>
+            <p class="category">Rokok</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 19.000 </div>
+          </div>
+          </div>
+
+          <div class="product best">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Rokok/MLD Black Series.png " />
+            </div>
+            <h3>MLD Black Series</h3>
+            <p class="category">Rokok</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 25.000 </div>
+          </div>
+          </div>
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Rokok/Sampoerna.png " />
+            </div>
+            <h3>Sampoerna</h3>
+            <p class="category">Rokok</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 35.000 </div>
+          </div>
+          </div>
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Rokok/LA light.png " />
+            </div>
+            <h3>LA light</h3>
+            <p class="category">Rokok</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 40.000 </div>
+          </div>
+          </div>
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Rokok/Surya gudang garam 12 filter.png " />
+            </div>
+            <h3>Surya gudang garam 12 filter</h3>
+            <p class="category">Rokok</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 41.000 </div>
+          </div>
+          </div>
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Obat-obatan/Amoxcilin.png " />
+            </div>
+            <h3>Amoxcilin</h3>
+            <p class="category">Obat-obatan</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp8.000 </div>
+          </div>
+          </div>
+
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Obat-obatan/Komik Jahe.png " />
+            </div>
+            <h3>Komik Jahe</h3>
+            <p class="category">Obat-obatan</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 2.500 </div>
+          </div>
+          </div>
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Obat-obatan/Koyo Salonpas.png " />
+            </div>
+            <h3>Koyo Salonpas</h3>
+            <p class="category">Obat-obatan</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 9.500 </div>
+          </div>
+          </div>
+
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Obat-obatan/Paracetamol.png " />
+            </div>
+            <h3>Paracetamol</h3>
+            <p class="category">Obat-obatan</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp 5.000 </div>
+          </div>
+          </div>
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Obat-obatan/Paramek Sakit Kepala.png " />
+            </div>
+            <h3>Paramek Sakit Kepala</h3>
+            <p class="category">Obat-obatan</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp3.000 </div>
+          </div>
+          </div>
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Obat-obatan/Paramex Flu & Batuk.png " />
+            </div>
+            <h3>Paramex Flu & Batuk</h3>
+            <p class="category">Obat-obatan</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp3.000 </div>
+          </div>
+          </div>
+          
+          <div class="product">
+          <div class="product-wrap">
+            <div class="img">
+              <img src="./assets/product-img/Obat-obatan/Paramex Nyeri Otot.png " />
+            </div>
+            <h3>Paramex Nyeri Otot</h3>
+            <p class="category">Obat-obatan</p>
+            <div class="product-choice">
+            </div>
+            <div class="price">Rp3.000 </div>
+          </div>
+          </div>
+
+          <div class="product">
+          <div class="product-wrap">
+          <div class="img">
+            <img src="./assets/product-img/Snack/Aqua Botol.png" />
+          </div>
+          <h3>Aqua Botol</h3>
+          <p class="category">Snack</p>
+          <div class="product-choice">
+          </div>
+          <div class="price">Rp 3.500 </div>
+          </div>
+          </div>
+
+      <div class="product">
+        <div class="product-wrap">
+          <div class="img">
+            <img src="./assets/product-img/Sembako/good day.png" />
+          </div>
+          <h3>Good Day Capucino</h3>
+          <p class="category">Sembako</p>
+          <div class="product-choice">
+          </div>
+          <div class="price">Rp 1.500 </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-wrap">
+          <div class="img">
+            <img src="./assets/product-img/Sembako/dancow sachet coklat.png" />
+          </div>
+          <h3>Dancow Sachet Coklat</h3>
+          <p class="category">Sembako</p>
+          <div class="product-choice">
+          </div>
+          <div class="price">Rp 5.000 </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-wrap">
+          <div class="img">
+            <img src="./assets/product-img/Sembako/frisiend flag coklat.png" />
+          </div>
+          <h3>Susu Frisian Flag Coklat Sachet</h3>
+          <p class="category">Sembako</p>
+          <div class="product-choice">
+          </div>
+          <div class="price">Rp 1.000 </div>
+        </div>
+      </div>
+
+            <div class="product">
+              <div
+                class="product-wrap"
+                data-price='{"1kg":22000,"2,5kg":38000,"5kg":80000, "10kg":150000, "20kg":254000, "25kg":450000}'
+                data-unit="g"
+                >
+                <div class="img">
+                  <img src="./assets/product-img/Sembako/beras putri sejati botol 1 liter.png" />
+                </div>
+                <h3>Beras Putri Sejati</h3>
+                <p class="category">Sembako</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                </div>
+                <div class="price">Rp 22.000</div>
+              </div>
+            </div>
+
+      <div class="product">
+        <div class="product-wrap">
+          <div class="img">
+            <img src="./assets/product-img/Sembako/minyak bimoli 1 liter.png" />
+          </div>
+          <h3>Bimoli 1 Liter Botol</h3>
+          <p class="category">Sembako</p>
+          <div class="product-choice">
+          </div>
+          <div class="price">Rp 28.000 </div>
+        </div>
+      </div>
+
+<div class="product">
+              <div
+                class="product-wrap"
+                data-price='{"250ml":12000,"1l":30000,"2l":53500}'
+                data-unit="g"
+                >
+                <div class="img">
+                  <img src="./assets/product-img/Sembako/bimoli.png" />
+                </div>
+                <h3>Bimoli </h3>
+                <p class="category">Sembako</p>
+                <div class="product-choice">
+                  <div class="size"></div> <!-- ini nanti akan diisi otomatis -->
+                </div>
+                <div class="price">Rp 12.000</div>
+              </div>
+            </div>
+
+      <div class="product">
+        <div class="product-wrap">
+          <div class="img">
+            <img src="./assets/product-img/Sembako/blueband.png" />
+          </div>
+          <h3>Blue Band</h3>
+          <p class="category">Sembako</p>
+          <div class="product-choice">
+          </div>
+          <div class="price">Rp 13.000 </div>
+        </div>
+      </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Modal HTML structure -->
+    <!-- Modal untuk keranjang -->
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Keranjang Anda</h2>
+    <div id="cartItemsContainer"></div>
+    <div class="checkout">
+      <p id="total-price"></p>
+      <button id="checkout-button">Bayar</button>
+    </div>
+  </div>
+</div>
+
+    
+          
+    <footer>
+      <div class="footer-wrap">
+        <div class="left">
+          <h3>Hubungi</h3>
+          <div class="location">
+            <p>
+              <i class="fas fa-map-marker-alt"></i
+              ><span>Peji, Lengkong, Kec. Mumbulsari, Kabupaten Jember, Jawa Timur</span>
+            </p>
+            <p><i class="fab fa-instagram"></i><span>@Tokko-Ku</span></p>
+            <p>
+              <i class="fas fa-phone-square-alt"></i
+              ><span>+62 856 5414 1926</span>
+            </p>
+          </div>
+        </div>
+        <div class="middle">
+          <h2>Tokko Ku</h2>
+          <p class="desc">Kualitas terhebat dengan harga bersahabat</p>
+          <div class="social">
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="right">
+          <h3>Jam Kerja</h3>
+          <div class="work-hours">
+            <p><span>Senin - Jum'at</span><span>08:00 Pagi - 10:00 Malam</span></p>
+            <p><span>Sabtu - Minggu</span><span>09:00 Pagi - 08:00 Malam</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/all.js"></script>
+    <style>
+      #mobileSidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #2D9CDB;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+        padding: 1.5rem;
+        display: none;
+        flex-direction: column;
+        z-index: 1000;
+        color: white;
+        font-size: 1.2rem;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+      }
+    
+      #mobileSidebar.show {
+        display: flex;
+      }
+    
+      #mobileSidebar.active {
+        transform: translateX(0);
+      }
+    
+      .close-btn {
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: -45px;
+        width: 35px;
+        height: 35px;
+        background-color: white;
+        color: #007BFF;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1001;
+      }
+    
+      .mobile-nav {
+        cursor: pointer;
+      }
+    
+      #mobileSidebar a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 1rem;
+        display: block;
+      }
+    </style>
+    
+    <!-- Tombol buka sidebar -->
+    <div class="mobile-nav"></div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const toggleBtn = document.querySelector('.mobile-nav');
+    
+        const sidebar = document.createElement('div');
+        sidebar.id = 'mobileSidebar';
+    
+        const headerContainer = document.createElement('div');
+        headerContainer.style.position = 'relative';
+    
+        const logoImg = document.createElement('img');
+        logoImg.src = './assets/Logo.png';
+        logoImg.alt = 'Logo';
+        Object.assign(logoImg.style, {
+          display: 'block',
+          margin: '0 auto 1.5rem auto',
+          width: '120px'
+        });
+    
+        const closeBtn = document.createElement('span');
+        closeBtn.className = 'close-btn';
+        closeBtn.innerHTML = '&times;';
+    
+        // Saat klik tombol close
+        closeBtn.addEventListener('click', () => {
+          sidebar.classList.remove('active');
+          // Setelah animasi selesai, sembunyikan
+          setTimeout(() => {
+            sidebar.classList.remove('show');
+          }, 300); // sama dengan durasi transition
+        });
+    
+        headerContainer.appendChild(logoImg);
+        headerContainer.appendChild(closeBtn);
+        sidebar.appendChild(headerContainer);
+    
+        const links = [
+          { text: 'Menu', href: './menu.html' },
+          { text: 'Tentang Kami', href: './about-us.html' },
+          { text: 'Kontak Kami', href: './contact-us.html' }
+        ];
+    
+        links.forEach(linkData => {
+          const a = document.createElement('a');
+          a.href = linkData.href;
+          a.textContent = linkData.text;
+          sidebar.appendChild(a);
+        });
+    
+        document.body.appendChild(sidebar);
+    
+        toggleBtn.addEventListener('click', function () {
+          sidebar.classList.add('show');
+          // delay 10ms untuk memastikan `display: flex` sudah diterapkan sebelum animasi
+          setTimeout(() => {
+            sidebar.classList.add('active');
+          }, 10);
+        });
+      });
+    </script>
+    
+  </body>
+  
+</html>
