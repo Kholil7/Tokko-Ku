@@ -25,12 +25,16 @@ document.addEventListener("DOMContentLoaded", function () {
   //   checkoutButton.addEventListener("click", function () {
   //     alert("Pesanan Anda diproses!");
   //   });
+
+  
+
   if (checkoutButton) {
   checkoutButton.addEventListener("click", function () {
     alert("Pesanan Anda diproses!");
 
     // Hapus data keranjang dari localStorage
     localStorage.removeItem("cartItems");
+    //  window.location.href = "checkout.html";
 
     // Kosongkan tampilan keranjang
     const cartItemsContainer = document.getElementById("cartItemsContainer");

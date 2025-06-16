@@ -132,7 +132,7 @@ function generateSizeOptionsFromData(container) {
     const hargaPerUkuran = JSON.parse(priceData);
 
     // Buat <select> ukuran
-    let selectHTML = `<span>Ukuran</span><select class="fixed" onchange="stillValue(); updateHiddenInput('hiddenSizeInput', this.value)">`;
+    let selectHTML = `<span>Berat</span><select class="fixed" onchange="stillValue(); updateHiddenInput('hiddenSizeInput', this.value)">`;
 
     for (let ukuran in hargaPerUkuran) {
       selectHTML += `<option value="${ukuran}">${ukuran}</option>`;
@@ -217,15 +217,16 @@ function addToCart() {
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
   // Optionally, you can provide feedback to the user
-  alert("Product added to cart!");
+  alert("Produk Ditambahkan Ke Keranjang");
   closePopup();
+  location.reload();
 }
 
 beforeHTML(
   ".price",
   `
   <div class="amount">
-      <span>Amount</span>
+      <span>Jumlah</span>
       <div class="number">
         <div class="minus" onclick="decreaseValue()"><i class="fas fa-minus"></i></div>
         <div class="value"><input id="product-amount" value="1"/></div>
@@ -238,7 +239,7 @@ beforeHTML(
 appendHTML(
   ".product-wrap",
   `
-  <div onclick="addToCart()" class="add"><span>Add to cart</span><i class="fas fa-cart-plus"></i></div>
+  <div onclick="addToCart()" class="add"><span>Keranjang</span><i class="fas fa-cart-plus"></i></div>
   <div class="close-pop" onclick="closePopup()"><i class="fas fa-times"></i></div>
 `
 );
